@@ -8,9 +8,9 @@ $logPath = "C:\Scripts\impresora_error.log"
 # LISTA CONFIGURABLE DE REDES E IMPRESORAS
 # --------------------------------------------------
 $redesImpresoras = @{
-    "INFINITUM7005"    = "Brother MFC-J285DW Printer"
-    "OFICINA"          = "Brother"
-    "CASA_DE_CESAR"    = "Brother"
+    "red_01"    = "Brother"
+    "red_02"    = "Brother"
+    "red_03"    = "Brother"
     # Formato: "NOMBRE_RED" = "NOMBRE_IMPRESORA"
 }
 
