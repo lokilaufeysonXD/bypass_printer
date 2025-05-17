@@ -29,7 +29,7 @@ try {
     $mensaje | Out-File -FilePath $logPath -Append
 }
 catch {
-    $mensaje = "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] ERROR al limpiar la cola de impresion: $_"
+    $mensaje = "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] ERROR: al limpiar la cola de impresion: $_"
     Write-Error $mensaje
     $mensaje | Out-File -FilePath $logPath -Append
 }
@@ -80,3 +80,4 @@ try {
     $mensaje | Out-File -FilePath $logPath -Append
     Start-Sleep -Seconds 10
 }
+
