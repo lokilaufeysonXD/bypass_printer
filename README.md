@@ -11,6 +11,7 @@ Este script lleva a cabo una:
 1. **Limpieza automática** de la cola de impresión (`spool\PRINTERS`)
 2. **Detección de red** actual
 3. **Configuración automática** de impresora predeterminada basada en reglas configurables
+4. **impresión de pagina de prueba**
 
 ## 🛠 Requisitos
 
@@ -20,7 +21,7 @@ Este script lleva a cabo una:
 
 ## ⚙️ Configuración
 
-1. Crear archivo `C:\Scripts\config\config_impresoras.txt` con formato:
+1. Crear archivo `bypass_printer\config\config_impresoras.txt` con formato:
 
 ```text
   "red1" = "Printer1"
@@ -50,13 +51,15 @@ Este script lleva a cabo una:
 ## 📊 Estructura de archivos
 
 ```text
-C:/
-├── Scripts/
-│   └── impresora_error.log
-└── bypass_printer/
-    ├── config/
-    │   └── config_impresoras.txt
-    └── bypass_printer.ps1
+bypass_printer/
+├── config/
+│   └── config_impresoras.txt
+├── scripts/
+│   └── bypass_printer.ps1
+│   └── Clear_Errors.ps1
+│   └── clear_tail.ps1
+│   └── Test_Page.ps1
+└── Menu.ps1
 ```
 
 ## 📜 Registro de eventos
@@ -69,7 +72,7 @@ Los logs se guardan en C:\Scripts\impresora_error.log con formato:
 
 ## 🔄 Flujo de trabajo
 
-<img src="https://github.com/user-attachments/assets/ded13412-c98f-4b7f-99a1-f16fc66f1939" alt="diagrama_de_flujo" width="300"/>
+<img src="https://github.com/user-attachments/assets/e3d76e75-4ece-4ab9-aa53-335121334667" alt="diagrama_de_flujo" width="3000"/>
 
 ## ⚠️ Notas importantes
 
